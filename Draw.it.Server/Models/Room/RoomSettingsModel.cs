@@ -5,8 +5,8 @@ namespace Draw.it.Server.Models.Room
 {
     public class RoomSettingsModel : IEquatable<RoomSettingsModel>
     {
-        private int _seconds;
-        private int _rounds;
+        private int _seconds = 60;
+        private int _rounds = 1;
         public string RoomName { get; set; } = string.Empty;
         public long CategoryId { get; set; }
 
